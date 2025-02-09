@@ -21,7 +21,9 @@
         };
     })) // {
       overlays.default = final: prev: {
-        kak-babashka = prev.callPackage ./derivation.nix {};
+        kakounePlugins = prev.kakounePlugins // {
+          kak-babashka = prev.callPackage ./derivation.nix {};
+        };
       };
     };
 }
