@@ -8,11 +8,11 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/share/kak/autoload/plugins/
-    sed '
+    sed "
       /^declare-option.*babashka_path/{
-        s,'bb',${babashka}/bin/bb,
+        s,'bb','${babashka}/bin/bb',
       }
-    ' rc/babashka.kak >$out/share/kak/autoload/plugins/babashka.kak
+    " rc/babashka.kak >$out/share/kak/autoload/plugins/babashka.kak
   '';
 
   meta = with lib; {

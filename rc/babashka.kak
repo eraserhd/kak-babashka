@@ -1,4 +1,4 @@
-declare-option -docstring %{Path to 'bb' command} str babashka_path 'bb'
+declare-option -docstring %{Path to bb binary} str babashka_path 'bb'
 
 declare-user-mode babashka
 map -docstring 'Babashka' global user b ': enter-user-mode babashka<ret>'
