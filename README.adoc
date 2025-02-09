@@ -1,4 +1,36 @@
 kak-babashka
 ============
 
-TODO: fill me in
+Evaluate babashka expressions while editing any file.
+
+For example, if you have this:
+
+```
+Left in main account: (- 4321 198)
+```
+
+You can select `(- 4321 198)` with `m`, then type `<space>bR` or invoke `babashka-replace`, and you will be left with:
+
+```
+Left in main account: 4123
+```
+
+You can also evaluate expressions and leave the result in the buffer.  For example, given:
+
+```
+(- 4321 ; account balance
+   2000 ; safety
+    350 ; electric bill
+ )
+```
+
+If you use `babashka-evaluate` or `<space>be`, you will have:
+
+```
+(- 4321 ; account balance
+   2000 ; safety
+    350 ; electric bill
+ ) ;=> 1971
+```
+
+If you evaluate this expression again, it will replace the result.

@@ -1,5 +1,5 @@
 {
-  description = "TODO: fill me in";
+  description = "Evaluate babashka expressions while editing any file in Kakoune";
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
   };
