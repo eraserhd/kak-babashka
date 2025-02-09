@@ -1,6 +1,7 @@
 {
   description = "Evaluate babashka expressions while editing any file in Kakoune";
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
   };
   outputs = { self, nixpkgs, flake-utils }:
