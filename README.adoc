@@ -1,7 +1,7 @@
 kak-babashka
 ============
 
-Evaluate babashka expressions while editing any file.
+Evaluate https://babashka.org/[babashka] expressions while editing any file.
 
 For example, if you have this:
 
